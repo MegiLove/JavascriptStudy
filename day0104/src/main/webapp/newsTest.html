@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	let news = "안랩은 지난 3일 시무식을 개최하고, 올해 경영방침과 도전과제, 사업전략을 발표했다고 4일 밝혔다.";
+	
+	window.onload = ()=>{
+		let n =1;
+		setInterval(()=>{
+			let data = news.substr(0,n++);
+			document.getElementById("result").innerHTML = data;
+			if(n >= news.length){
+				n = 1;
+			}
+		},200);
+		
+	}
+	
+</script>
+</head>
+<body>
+	<div id="result"></div>
+</body>
+</html>
+
