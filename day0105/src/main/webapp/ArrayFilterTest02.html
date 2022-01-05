@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+	let data = [
+		{name:"사과",qty:15},
+		{name:"포도",qty:30},
+		{name:"수박",qty:12},
+		{name:"딸기",qty:20},
+		{name:"채리",qty:25},
+		{name:"오랜지",qty:50}
+	];
+	
+	// filter함수를 이용하여 수량이 20개 이상인 상품을 추출하여 
+	// 새로운 배열에 담아 출력 합니다.
+	let a = data.filter(function(item, index){
+		return item.qty >= 20;
+	});
+	
+	console.log(a);
+</script>
+</body>
+</html>
