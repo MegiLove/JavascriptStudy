@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	span{
+		display: inline-block;
+		width: 30px;
+		height: 20px;
+		margin: 20px;
+	}
+	
+	body{
+		padding: 100px;
+		
+	}
+</style>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("span").click(function(){
+			$("div").css("color",  $(this).css("background-color") );
+		});
+		
+		/*
+		let span_list = $("span");		
+		$.each(span_list, function(index, item){
+			$(item).click(function(){			
+				let color = $(this).css("background-color");				
+				$("div").css("color",color);
+			});
+		});*/
+	});
+</script>
+</head>
+<body>
+	<div>국민의힘 윤석열 대선 후보는 지난 7일 '수도권 광역교통망 관련 정책'을 발표한 데 이어 이번엔 인천을 찾아 지역 교통 공약을 발표합니다.
+
+국민의힘은 윤 후보가 오늘(10일) 오전 인천역 앞에서 인천 지역의 핵심 교통 공약을 발표한다고 밝혔습니다.
+
+선대위 측은 인천이 개화기 대한민국 산업화와 교역의 출발점이라는 상징성을 담은 공약이라고 설명했습니다.
+
+이에 앞서 윤 후보는 인천 경제계·시민사회 인사들이 모이는 자리에서 조찬 강연을 하고, 중소기업 현장을 방문해 근로환경 개선 방안을 모색합니다.</div>
+	<hr>
+	<span style="background: red"></span>
+	<span style="background: green"></span>
+	<span style="background: blue"></span>
+	<span style="background: pink"></span>
+	<span style="background: orange"></span>
+</body>
+</html>
