@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	div{
+		margin: 10px;
+		padding: 10px;
+		border: solid 3px black;
+		border-radius: 10px;
+	}
+</style>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("div").on("click",function(){
+			$(this).clone().appendTo("body");
+		});
+	});
+</script>
+</head>
+<body>
+	<div>
+		<h1>[속보]'먹는 코로나 치료제' 2만명분 내일 도착…월말 1만명분 추가 도입</h1>
+		<p>13일 화이자사(社) 개발 경구용 코로나19 치료제 '팍스로비드' 2.1만명분이 국내 첫 도착. 1월 말까지 1만명분이 추가 도입…이후 물량 순차적으로 도입 예정.</p>
+	</div>
+</body>
+</html>
